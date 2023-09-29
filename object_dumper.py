@@ -17,8 +17,7 @@ def dump_obj(*, obj: object, obj_name: str = None, folder_path: str = None, run_
         code_context = stack[1].code_context
         
         first_kwarg_name, second_kwarg_name = [*_locals][0:2]
-
-        
+   
         args = re.search(f'{func_name}(\(.+?\))', code_context[0])
         if args is None:
             raise RuntimeError(
