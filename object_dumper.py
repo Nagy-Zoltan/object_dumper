@@ -11,8 +11,6 @@ def dump_obj(*, obj: object, obj_name: str = None, folder_path: str = None, run_
     _locals = locals()
     if obj_name is None:
         stack = inspect.stack()
-        global _stack
-        _stack = stack
         func_name = stack[0].function
         code_context = stack[1].code_context
         
