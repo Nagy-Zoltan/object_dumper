@@ -34,7 +34,7 @@ def dump_obj(*, obj: object, obj_name: str = None, folder_path: str = None, run_
         
         if not first_kwarg_value.isidentifier() or first_kwarg_value in keyword.kwlist:
             raise RuntimeError(
-                f'Please provide "{first_kwarg_name}" parameter with an identifier or provide "{second_kwarg_name}".'
+                f'Please provide "{first_kwarg_name}" parameter with an identifier or provide "{second_kwarg_name}"'
             )
             
         obj_name = first_kwarg_value
